@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my mug collection</title>
+    <link id="theme" href="css/mugs-chicken.css" rel="stylesheet" type="text/css">
+    <link id="theme" href="css/mugs.css" rel="stylesheet" type="text/css">
+    <link id="theme" rel="shortcut icon" href="img/favicon.gif" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet'>
+  </head>
+<body>
+    <div class="home">
+        <h3><a href="index.html">HOME</a></h3>
+    </div>
+    <div class="header">
+        <h1>MY SOUP MUG COLLECTION</h1>
+        <p>pick a theme</p>
+        <form aria-label="styleswitcher">
+            <select name="styleswitcher" onchange="changeStyle(this.value)">
+            <option value="/css/mugs-tomato">tomato</option>
+            <option value="/css/mugs-chicken">chicken</option>
+            <option value="/css/mugs-potato">potato</option>
+            <option value="/css/mugs-onion">onion</option>
+            </select>
+        </form>
+    </div>
+    <div class="main">
+        <p>These soup recipe mugs are a collection of mugs that come in a large variety of recipes, and i am on a quest to find them all. currently i have <b>4 out of 12</b> (though total count is still unofficial).
+        <h2>MY MUGS:</h2>
+        <img class="mugs" src="img/mugs/tomatosoup.png" width="25%;" title="tomato soup"><img class="mugs" src="img/mugs/chickensoup.png" width="25%;" title="chicken soup"><img class="mugs" src="img/mugs/potatosoup.png" width="25%;" title="potato soup"><img class="mugs" src="img/mugs/onionsoup.png" width="25%;" title="onion soup">
+        <div class="wrapper">
+            <div class="column">
+                <h3>TOMATO SOUP</h3>
+                <div class="recipe">
+                    <p>1 quart white stock</p>
+                    <p>1 lb. tomatoes</p>
+                    <p>1 onion</p>
+                    <p>1 carrot</p>
+                    <p><sup>1</sup>/<sub>2</sub> oz. margarine</p>
+                    <p>1 oz. bacon</p>
+                    <p>bunch herbs</p>
+                    <p><sup>1</sup>/<sub>2</sub> oz. cornflower</p>
+                    <p>salt & pepper</p>
+                    <p>grated nutmeg</p>
+                    <p>lemon juice</p>
+                </div>
+            </div>
+            <div class="column">
+                <h3>CHICKEN SOUP</h3>
+                <div class="recipe">
+                    <p>1 small chicken</p>
+                    <p>3-4 pints water</p>
+                    <p>salt & pepper</p>
+                    <p>fresh herbs</p>
+                    <p>1 onion</p>
+                    <p>1 blade mace</p>
+                    <p>bunch herbs</p>
+                    <p>1 bay leaf</p>
+                </div>
+            </div>
+            <div class="column">
+                <h3>POTATO SOUP</h3>
+                <div class="recipe">
+                    <p>4 baking potatoes</p>
+                    <p><sup>2</sup>/<sub>3</sub> cup butter</p>
+                    <p><sup>2</sup>/<sub>3</sub> oz. flour</p>
+                    <p>6 cups milk</p>
+                    <p>1 cup chopped green onions</p>
+                    <p>12 slices of bacon, cooked</p>
+                    <p>5 oz. cheddar cheese</p>
+                    <p>8 oz. sour cream</p>
+                </div>
+            </div>
+            <div class="column">
+                <h3>ONION SOUP</h3>
+                <div class="recipe">
+                    <p>3 large onions</p>
+                    <p>1 oz. butter</p>
+                    <p>1 quart white stock</p>
+                    <p>1 garlic clove</p>
+                    <p>1 bay leaf</p>
+                    <p>1 blade mace</p>
+                    <p><sup>1</sup>/<sub>2</sub> pint milk</p>
+                    <p>salt & pepper</p>
+                </div>
+            </div>
+        </div>
+        <p> While the mugs are commonly credited online to the company <b>Dat'l Do-It</b>, D.D.I. actually only started manufacturing these in 2010 - but the design dates back as far as the 1970s! Unfortunately, little is known right now about the original creator of the mugs or who originally produced them, but i will keep digging! during my research (aka me emailing Dat'l Do-It's customer service representative lmao, thank you Katie!!), i discovered that Dat'l Do-It has only ever produced tomato, vegetable, chicken, potato, onion, and mushroom mugs, and all of the other designs came from some other nebulous point in the design's history.</p>
+        <p>out of my 4, my tomato, potato, and chicken mugs are Dat'l Do-It branded, but my onion one doesn't have a stamp on it, so maybe it's a vintage one from the 70s! who knows!</p>
+        <br>
+        <p>this <a target="_blank" href="https://www.facebook.com/groups/733197827667722/permalink/1462262941427870/">facebook post</a> and this <a target="_blank" href="https://www.reddit.com/r/muglife/comments/1kix0eq/my_collection_of_datl_doit_soup_recipe_mugs_so_far/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">reddit post</a> have shared photos of their collections, which seem to be the most complete collections i've seen online. the redditor mentions in the comments that they're looking for chili and corn chowder to finish the set, but i haven't been able to find any photos of these mugs so i am leaving them off of the checklist for now.</p>
+        <p>collection checklist:</p>
+            <div class="column checkbox">
+                <label class="form-control">
+                    <input type="checkbox" name="tomato" checked disabled />
+                    tomato soup
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" name="chicken" checked disabled />
+                    chicken soup
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" name="potato" checked disabled />
+                    potato soup
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" name="onion" checked disabled />
+                    onion soup
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" name="vegetable" disabled />
+                    vegetable soup
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" name="mushroom" disabled />
+                    mushroom
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" name="oxtail" disabled />
+                    oxtail soup
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" name="scotch broth" disabled />
+                    scotch broth
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" name="mulligatawny" disabled />
+                    mulligatawny
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" name="split pea" disabled />
+                    split pea
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" name="clam chowder" disabled />
+                    clam chowder
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" name="fish" disabled />
+                    fish soup
+                </label>
+            </div>
+        <p>my quest is currently <u>in-person thrift store finds only</u>. i've seen plenty of these online but just ordering it takes away the thrill of the hunt :P</p>
+        <p>if you own any please email me a photo <span>olliveeny@gmail.com</span> or leave a message in my <a href="guestbook.html">guestbook</a>!</p>
+    </div>
+    <div class="footer wrapper">
+        <div class="bigcolumn">
+            <p>inspired by <a target="_blank" href="https://foggybear42.net/collections/mugs/">foggybear42's mug collection</a></p>
+        </div>
+        <div class="bigcolumn">
+            <p>background image credit: <a target="_blank" href="https://unsplash.com/photos/tomatoes-hanging-on-tomato-plant-4LiUI-Y2mI8">tomato</a> |  <a target="_blank" href="https://unsplash.com/photos/white-and-red-birds-on-white-surface-a7VG3Jrl2Lg">chicken</a> |  <a target="_blank" href="https://unsplash.com/photos/green-plants-on-green-grass-field-during-daytime-hVcG4UdxNhM">potato</a> |  <a target="_blank" href="https://unsplash.com/photos/a-close-up-of-purple-flowers-PPmIp_LTQl0">onion</a></p>
+        </div>
+    </div>
+
+
+    <script>
+        function changeStyle(style) {
+        if (style == null)
+            style = localStorage.getItem("style");
+            if (style == null) 
+                style = "/css/mugs-tomato";
+        document.querySelector("link[type='text/css']").setAttribute("href", style + ".css");
+        localStorage.setItem("style", style);
+    }
+
+    changeStyle();
+    </script>
+</body>
+</html>
