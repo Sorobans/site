@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soro's</title>
+    <link href="css/home.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/98.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="img/favicon.gif" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--<script src="https://kit.fontawesome.com/14684ee2f7.js" crossorigin="anonymous"></script>-->
+    <script src="https://kit.fontawesome.com/cafac0072a.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+
+<!--/* hello SNOOPER */-->  
+<!--/* what are you doing here?????? why are you spying on my code??? go on, git. */-->       
+
+  <div class="box">
+    <div class="windowwrapper">
+       <div class="windowwrapper2">
+          <!--main-->
+          <div id="div4">
+            <div id="drag" class="window">
+               <div id="header4" class="title-bar">
+                  <div class="title-bar-text"><img src="img/painticon.png" height="15px;"> olliveen - Paint</div>
+                  <div class="title-bar-controls">
+                     <button aria-label="Minimize"></button>
+                     <button aria-label="Maximize"></button>
+                     <button aria-label="Close" onclick="closeDiv(4); closeButton(4)"></button>
+                  </div>
+               </div>
+               <div class="window-body">
+                  <div class="topmenu">
+                     <u>F</u>ile &ensp;&nbsp; <u>E</u>dit &ensp;&nbsp; <u>V</u>iew &nbsp;
+                     <div class="dropdown">
+                        <button class="ocs" onclick="ocFunction()"><u>O</u>Cs</button>
+                        <div id="ocDropdown" class="odropdown-content">
+                           <a href="oc/index.html"><u>O</u>C Hub</a>
+                           <hr>
+                           <a href="oc/pudding&amp;shadow.html"><u>P</u>udding & Shadow</a>
+                        </div>
+                     </div>
+                     <script>
+                        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+                        function ocFunction() {
+                        document.getElementById("ocDropdown").classList.toggle("show");
+                        }
+                        // Close the dropdown if the user clicks outside of it
+                        // catch the click outside
+                        document.addEventListener('click', e => {
+                        if (e.target.classList.contains('ocs')) return;
+                           document.querySelectorAll('.odropdown-content').forEach(div => div.classList.remove('show'))
+                        })
+                     </script>
+                     <div class="dropdown">
+                        <button class="shrines" onclick="shrineFunction()"><u>S</u>hrines</button>
+                        <div id="shrineDropdown" class="sdropdown-content">
+                           <a href="shrines/romeo.html"><u>R</u>omeo Montague</a>
+                           <a href="shrines/whoisthat.html"><u>G</u>roundhog Day Musical</a>
+                           <a href="shrines/Daisy_Jones_&amp;_The_Six.html"><u>D</u>aisy Jones & The Six</a>
+                           <a href="shrines/julieandthephantoms.html"><u>J</u>ulie and the Phantoms</a>
+                        </div>
+                     </div>
+                     <script>
+                        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+                        function shrineFunction() {
+                        document.getElementById("shrineDropdown").classList.toggle("show");
+                        }
+                        // Close the dropdown if the user clicks outside of it
+                        // catch the click outside
+                        document.addEventListener('click', e => {
+                        if (e.target.classList.contains('shrines')) return;
+                           document.querySelectorAll('.sdropdown-content').forEach(div => div.classList.remove('show'))
+                        })
+                     </script>
+                     <div class="dropdown">
+                        <button class="links" onclick="linkFunction()"><u>L</u>inks</button>
+                        <div id="linkDropdown" class="ldropdown-content">
+                           <a href="links.html"><u>L</u>inks & Resources</a>
+                           <a href="cliques.html"><u>P</u>ixel Cliques</a>
+                        </div>
+                     </div>
+                     <script>
+                        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+                        function linkFunction() {
+                        document.getElementById("linkDropdown").classList.toggle("show");
+                        }
+                        // Close the dropdown if the user clicks outside of it
+                        // catch the click outside
+                        document.addEventListener('click', e => {
+                        if (e.target.classList.contains('links')) return;
+                           document.querySelectorAll('.ldropdown-content').forEach(div => div.classList.remove('show'))
+                        })
+                     </script>
+                  </div>
+               <div class="msbody">
+                  <div class="msnav">
+                     <hr style="width:120%;margin-left:-12px;margin-top:-5px;margin-bottom:-5px;">
+                     <div class="navcolumn">
+                        <div class="navbuttons">
+                           <img src="img/mspaint/starthingy.png">
+                        </div>
+                        <div class="navbuttons">
+                           <img src="img/mspaint/box.png">
+                        </div>
+                        </div>
+                        <div class="navcolumnrow">
+                           <div class="navbuttons">
+                              <img src="img/mspaint/eraser.png">
+                           </div>
+                           <div class="navbuttonsactive">
+                              <a href="fashion.html"><img src="img/mspaint/paint.png"></a> 
+                           </div>
+                        </div>
+                        <div class="navcolumnrow">
+                           <div class="navbuttons">
+                              <img src="img/mspaint/dropper.png">
+                           </div>
+                           <div class="navbuttonsactive">
+                              <a href="tvroom.html"><img src="img/mspaint/search.png"></a> 
+                           </div>
+                        </div><div class="navcolumnrow">
+                           <div class="navbuttonsactive">
+                              <a href="poetry.html"><img src="img/mspaint/pencil.png"></a>
+                           </div>
+                           <div class="navbuttonsactive">
+                              <a href="art.html"><img src="img/mspaint/brush.png"></a> 
+                           </div>
+                        </div>
+                        <div class="navcolumnrow">
+                           <div class="navbuttons">
+                              <img src="img/mspaint/fillthing.png">
+                           </div>
+                           <div class="navbuttonsactive">
+                              <a href="diary.html"><img src="img/mspaint/type.png"></a>
+                           </div>
+                        </div>
+                        <div class="navcolumnrow">
+                           <div class="navbuttons">
+                              <img src="img/mspaint/line.png">
+                           </div>
+                           <div class="navbuttons">
+                              <img src="img/mspaint/curve.png"> 
+                           </div>
+                        </div>
+                        <div class="navcolumnrow">
+                           <div class="navbuttons">
+                              <img src="img/mspaint/box2.png">
+                           </div>
+                           <div class="navbuttons">
+                              <img src="img/mspaint/weridshit.png"> 
+                           </div>
+                        </div>
+                        <div class="navcolumnrow">
+                           <div class="navbuttons">
+                              <img src="img/mspaint/oval.png">
+                           </div>
+                           <div class="navbuttons">
+                              <img src="img/mspaint/oval2.png"> 
+                           </div>
+                     </div>
+                     <div class="emptyboxfordecorationiguess"></div>
+                     <hr style="width:120%;margin-left:-12px;margin-top:17px;margin-bottom:-5px;">
+                  </div>
+                  <div class="main">
+                     <!--left column-->
+                     <div class="leftcolumn">
+                        <div class="mebutton">
+                           <div class="emptycard">
+                            <!--CHRISTMAS <img src="/img/santa.png" width="140" style="position:relative;margin-bottom:-150px;margin-top:-100px;left:7px;z-index:9;">-->
+                            <!--HALLOWEEN <img src="/img/halloween/witchhat.png" width="170" style="position:relative;margin-bottom:-100px;margin-top:-100px;left:-10px;z-index:9;"> --> 
+                              <p><img class="lilme" src="img/lilme.png" height="240"></p>
+                           </div>
+                           <div class="mybutton">
+                              <p>link back to my site!</p>
+                              <p><img src="img/button.gif"></p>
+                              <textarea class="mybuttoncopy" style="margin-top:-15px;"><a href="index.html" target="_blank"><img src="img/button.gif"></a></textarea>
+                              <p><img src="img/button2.jpg"></p>
+                              <textarea class="mybuttoncopy" style="margin-top:-15px;"><a href="index.html" target="_blank"><img src="img/button2.jpg"></a></textarea>
+                           </div>
+                        </div>
+                        <div class="buttons">
+                           <p>super cool sites i like!!</p>
+                           <a href="https://ninacti0n.neocities.org/" target="_blank"><img src="img/buttons/nina.gif"></a>
+                           <a href="https://thechillzone.neocities.org/" target="_blank"><img src="img/buttons/chillzonebuttonborder.png"></a>
+                           <a href="https://odditycommoddity.neocities.org/" target="_blank"><img src="img/buttons/Oddity&#32;button_2.gif"></a>
+                           <a href="https://dimwit.neocities.org/" target="_blank"><img src="img/buttons/dim-btn.gif"></a>
+                           <a href='https://noodledesk.net/' target="_blank"><img src='img/buttons/noodlebutton.gif'></a>
+                           <a href="https://www.lovesick.cafe/" target="_blank"><img src="img/buttons/lovesick-button2.png"></a>
+                           <a href='https://bridget.neocities.org/' target="_blank"><img src='img/buttons/bridgetbutton2.gif'></a>
+                           <a href='https://spiders.neocities.org/' target="_blank"><img src='img/buttons/spiders.gif'></a>
+                           <a href='https://solaria.neocities.org/' target="_blank"><img src='img/buttons/solaria.gif'></a> 
+                           <a href='https://blamensir.neocities.org/' target="_blank"><img src='img/buttons/blamensir.gif' height="31px"></a> 
+                           <a href="https://vertpush.neocities.org/" target="_blank"><img style="width: 88px; height: 31px;" src="img/buttons/vertpushbutton.gif"/></a>
+                           <a href='https://doqmeat.neocities.org/' target="_blank"><img src='img/buttons/doqmeat.png'></a>
+                           <a href='https://phrogee.neocities.org/' target="_blank"><img src='img/buttons/phrogee.gif'></a>
+                           <a href='https://runegod.net/' target="_blank"><img src='img/buttons/runebutton.gif'></a>
+                           <a href='https://foggybear42.neocities.org' target='_blank'><img src='img/buttons/foggybear.gif'></a>
+                           <a href="https://uncannyvalley.neocities.org/" target="_blank"><img src="img/buttons/uncanny.gif"></a> 
+                           <a href="https://layercake.neocities.org/" target="_blank"><img src="img/buttons/layercake.gif" height="31px"></a>
+                           <a href="https://spiritcellar.neocities.org/" target="_blank"><img src="img/buttons/spiritcellar_badge.gif"></a>
+                           <a href="https://feelingmachine.moe/" target="_blank"><img src="img/buttons/feelingmachine.gif"></a>
+                           <a href="https://soyatoast.neocities.org/" target="_blank"><img src="img/buttons/soyatoast.png"></a>
+                           <a href="https://peanutbuttaz.neocities.org/" target="_blank"><img src="img/buttons/peanutbuttaz2.png"></a>
+                           <a href='https://juneish.neocities.org/' target="_blank"><img src='img/buttons/webcatz.png'></a>
+                           <a href='https://vaje.neocities.org/' target="_blank"><img src='img/buttons/vajebutton.gif'></a>
+                           <a href='https://atomicgothic.neocities.org/' target="_blank"><img src='img/buttons/atomicgothic.gif'></a>
+                           <a href="https://yapi.lol/" target="_blank"><img src="img/buttons/yapilol.gif"></a> 
+                           <a href="https://sneekrealm.neocities.org/" target="_blank"><img src="img/buttons/sneek.png" alt="sneekrealm"></a>
+                           <a href="https://bloody-world.neocities.org/" target="_blank"><img src="img/buttons/bloody.gif"></a> 
+                           <a href="https://kittymanya.neocities.org/" target="_blank"><img src="img/buttons/kittymanya&#32;button.gif"></a> 
+                           <a href="https://roaratomic.neocities.org/" target="_blank"><img src="img/buttons/raob.gif"></a> 
+                           <a href ="https://xomii.neocities.org/index.html" target="_blank"><img style="height: 31px;" src="img/buttons/xomii.gif"></a>
+                           <a href="https://sizztuna.neocities.org/" target="_blank"><img src="img/buttons/tunabutton.gif"></a>
+                           <a href="https://ohrade.neocities.org/" target="_blank"><img src="img/buttons/OHRADEBUTTON.gif"></a>
+                           <a href="https://kyomakus.online/" target="_blank"><img src="img/buttons/kyoonline.gif"></a>
+                           <a href="https://confettiguts.neocities.org/" target="_blank"><img src="img/buttons/confetty.gif"></a>
+                           <a href="https://hillhouse.neocities.org/" target="_blank"><img src="img/buttons/hillhouse3.png"></a>
+                           <a href="https://antiamorous.neocities.org/" target="_blank"><img src="img/buttons/antiamobutton.gif"></a>
+                           <a target="_blank" href="https://phantasmablahh.neocities.org/"><img src="img/buttons/palomas2.png" alt="a button"></a>
+                           <a href="https://phantasmagoriapetz.neocities.org/" target="_blank"><img src="img/buttons/phantasm.png"></a>
+                           <a href="https://lightparty.neocities.org/" target="_blank"><img src="img/buttons/lightparty.gif"></a>
+                           <a href="http://bisha.neocities.org" target="_blank"><img src="img/buttons/bisha.gif"></a>
+                           <a href="https://lostlove.neocities.org/" target="_blank"><img src="img/buttons/lunospace.gif"></a>
+                           <a href="https://myblace.one/" target="_blank"><img src="img/buttons/myblace.png"></a>
+                           <a href="https://leizy8499.neocities.org/" target="_blank"><img src="https://leizy8499.neocities.org/buttons/LEIZY8499.jpeg"></a>
+                           <a target="_blank" href="https://lopster.neocities.org/"><img alt="Lopster Button" src="https://i.postimg.cc/YSN66fWr/run-away.gif"></a>                            <a href="https://kawaiinightmare.neocities.org/" target="_blank"><img src="img/buttons/kawaiinightmare.gif"></a>
+                            <a href="https://velvetblue.neocities.org" target="_blank"><img src="img/buttons/velvetblue.png" alt="Velvet Blue"></a>
+                            <a href="https://killing-machine.neocities.org" target="_blank"><img src="https://killing-machine.neocities.org/killing-machine88x31.gif"></a>
+                            <a href="https://swiftyshq.neocities.org/"><img src="https://swiftyshq.neocities.org/img/res/aff/summeraff.gif" alt="Swifty's HQ!" /></a>
+                            <a href="https://dimden.dev/" target="_blank"><img src="https://dimden.dev/images/88x31.gif"></a>
+                            <a href="https://ribo.zone/" target="_blank"><img src="img/buttons/ribose.png"></a>
+                            <a href="https://princss.online" target="_blank"><img src="https://princss.online/media/images/buttons/princss_button.png"></a>
+                            <a href="https://grossgirl94.neocities.org/" target="_blank"><img src="img/buttons/grossgirl94.gif"></a>
+                            <a href="https://leviathren.neocities.org/" target="_blank"><img src="img/buttons/leviathrenbutton.gif"></a>
+                            <a href="https://daniele63.com/" target="_blank"><img src="img/buttons/danieles_button.png"></a>
+                            <a href="https://maphren.neocities.org/" target="_blank"><img src="https://maphren.neocities.org/imgs/buttons/maphren.gif"></a>
+                            <a target="_blank" href="https://troy-sucks.neocities.org/"><img src="https://troy-sucks.neocities.org/images/troysuckwiggly.gif"/>
+                           <a target="_blank" href="https://podruff.neocities.org/"><img src="img/buttons/podminton.png" alt="podminton"></a>
+                           <a href="https://burgeritchi.neocities.org" target="_blank"><img src="https://files.catbox.moe/29hdqz.webp" width="88" height="31">
+                           <a href="https://seafare.neocities.org/" target="_blank"><img src="img/buttons/seafare.png"></a>
+                           <a href="https://revolution909.neocities.org/" target="_blank"><img src="img/buttons/button_rev.gif"></a>
+                           <a href="https://coffeeplant.neocities.org/" target="_blank"><img src="img/buttons/coffeeplant.jpg"></a>
+                           <a href="https://goldhillmall.neocities.org/" target="_blank"><img src="img/buttons/goldhillmallbanner.gif"></a>
+                           <a title="Laith Rai7an" href="http://arataka.neocities.org/" target="_blank"><img alt="Laith Rai7an" src="img/buttons/laith.gif"/></a>
+                           <a href="https://lazybones.neocities.org/"><img src="https://lazybones.neocities.org/IMAGES/lazybonesicon4.png"/></a>
+                           <a href="https://staghunters.neocities.org/" target="_blank"><img src="https://staghunters.neocities.org/graphics/stagbutton.png"></a>
+                           <a href="https://hog.neocities.org/"  target="_blank"><img alt="hog" title="hog" src="https://hog.neocities.org/hog-button.gif"></a>
+                           <a href="https://lupinus.neocities.org/"  target="_blank"> <img src="https://lupinus.neocities.org/vampiresnestbutton.gif"> </a>
+                           <a href="https://tinypaws.neocities.org/"  target="_blank"> <img src="img/buttons/bannerdone.gif"></a>
+                           <a href="https://sweetfish.site/"  target="_blank"> <img src="img/buttons/sweetfish.png"></a>
+                           <a href="https://greenbox.network/" target="_blank"><img src="https://greenbox.network/images/8831/current.png"></a> 
+                           <a href="https://hgari.neocities.org/"><img src="https://hgari.neocities.org/images/hgaributton.png" target="_blank"></a> 
+                           <a href="https://kopawz.neocities.org/"><img src="img/buttons/koscrag.gif" target="_blank"></a> 
+                           <a href="https://ruralrose.neocities.org/"><img src="img/buttons/ruralrose.gif" target="_blank"></a> 
+                           <a href="https://howsoonisnow.org/" target="_blank"><img src="img/buttons/howsoonisnow.gif"></a>
+                           <a href="https://melankorin.net/" target="_blank"><img src="https://melankorin.net/assets/img/buttons/button-1.gif" alt=""></a>
+                           <a href="https://j00d-3ug.neocities.org/" target=blank><img src="https://j00d-3ug.neocities.org/decor/BUTTONS/mine/j00d3ug.gif"></a>
+                           <a href="https://fairygore.neocities.org/"><img src="img/buttons/fairygore.png" target="_blank"></a> 
+                           <a href="https://kidwiththechemicalz.net/"><img src="img/buttons/kidchemicalz.gif" target="_blank"></a> 
+                           <a href="https://braigwen.neocities.org/"><img src="img/buttons/imladris.png" target="_blank"></a> 
+                           <a href="https://e-weasel.neocities.org/"><img src="img/buttons/wmcdbutton.gif" target="_blank"></a>
+                           <a href="https://artwork.neocities.org/"><img src="img/buttons/artworkbuttonsanrio.gif" target="_blank"></a>
+                           <a href="https://stupied.neocities.org/" target="_blank"><img src="https://stupied.neocities.org/meta/button.png" alt="stupied"></a>
+                           <a href="https://humanfinny.neocities.org/" target="_blank"><img src="https://64.media.tumblr.com/9a5f215231190094ffe95a82467b96b6/938977e62648d656-c9/s100x200/2aca710e5ebbc86dc04f74639349fd49b0c3e06d.gifv">
+                           <a href="https://daikonet.neocities.org/ "target="_blank" style="display: inline-block;"><img src="https://daikonet.neocities.org/img/daikonet2.gif"></a>
+                           <a href="https://ne0nbandit.neocities.org/" target="_blank"><img src="https://ne0nbandit.github.io/assets/img/btn/mine/nbbanner.png"></a>
+                           <a href="https://oopsiedoodle.com/"><img src="img/buttons/OopsieDoodleButton.png" target="_blank"></a>
+                           <a href="https://combatbaby.neocities.org/"><img src="img/buttons/combatbaby24.gif" target="_blank"></a>
+                           <a href="http://aliceinavocadoland.neocities.org"><img src="https://i.imgur.com/UvfJq3Y.gif"></a>
+                           <a href="https://sunnypeach.neocities.org" target="_blank"><img src="img/buttons/sunnybutton.png"/></a>
+                           <a href="https://novalite.rest/" target="_blank"><img src="https://novalite.rest/siteImage/siteBtn.png"></a>
+                           <a href="https://garfriend.me/" target="_blank"><img src="img/buttons/garfriend-button.gif"/></a>
+                           <a href="https://vulpecula.neocities.org/" target="_blank"><img src="img/buttons/vulpbutton3.gif"/></a>
+                           <a target="_blank" href="https://404city.neocities.org/"><img src="https://404city.neocities.org/btn.gif" alt="Website button of https://404city.neocities.org"></a>
+                        </div>
+                        <!--buttons-->
+                        <div class="buttons">
+                           <iframe width="180" height="180" style="border:none" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe>
+                        </div>
+                     </div>
+                     <!--right column-->
+                     <div class="rightcolumn">
+                        <img src="img/giphy.gif" style="position:relative;float:right;z-index:10;top:-30px;margin-bottom:-40px;" width="100px;">
+                        <div class="card2">
+                           <h2 style="text-align:center;margin-left:40px;">welcome to my website! i am so happy you're here!!!</h2>
+                           <h3 style="text-align:center;">this site was made using a 1440x900 display with Firefox and is NOT made for mobile.</h3>
+                           <div class="buttons">
+                              <img src="img/emoborder.gif" height="18px;"> <img src="img/emoborder.gif" height="18px;">
+                           </div>
+                           <p>my name is <span>ollie!</span> this is my humble abode where I like to keep my creations. welcome welcome welcome!</p>
+                           <p>navigate around this site by clicking on buttons and seeing what they do!! or, if that's too much work, you can <b><u>navigate by clicking START.</u></b> and while you're here, please sign the <span>guestbook</span> over to your right.</p>
+                        </div>
+                        <!--buttons-->
+                        <div class="buttons">
+                           <img src="img/buttons/graphicdesign.png"><a href="https://www.mabsland.com/Adoption.html" target="_blank"><img src="img/buttons/14c.gif" height="30px"></a><a href="https://hillhouse.neocities.org/journal/notes/palestine" target="_blank"><img src="img/buttons/palestine.gif"></a><img src="img/buttons/neocities.gif"><img src="img/buttons/queer.png"><img src="img/buttons/lesb.png">
+                        </div>
+                        <div class="wrapper">
+                          <div class="art">
+                             <div class="buttons">
+                                <p>featured artwork:</p>
+                             </div>
+                             <a href="art.html"><img class="latestart" src="https://64.media.tumblr.com/3ee8d61103faeec7fb743a887f855263/f15a585be0539242-6f/s2048x3072/6c83f2a6305935e1539c6552b719b813a6b73794.jpg" alt="July 25, 2025. emma from the guy who didn't like musicals"></a>
+                             <div class="buttons">
+                                <img src="img/firefox.png" width="210px;">
+                             </div>
+                             <br>
+                             <div class="buttons">
+                                 <h2>pixel cliques!</h2>
+                              </div>
+                              <div class="wrapper">
+                                 <div class="webrings" style="width:200px;">
+                                    <a href="https://pixelbill.neocities.org/"><img src="https://pixelbill.neocities.org/Pixelbills/pixelbill_site_button2.png"></a><a href="https://hillhouse.neocities.org/cliques/library/"><img src="https://hillhouse.neocities.org/cliques/library/images/library88x31-pink.png"></a>
+                                    <h3><a href="cliques.html">click here to go to my cliques page</a></h3>
+                                 </div>
+                              </div>
+                          </div>
+                          <div class="webrings">
+                             <h2>webrings!</h2>
+                             <div id='ncring' style="margin-bottom:10px;position:relative;z-index:2;">
+                                <script type="text/javascript" src="https://neocreatives.neocities.org/onionring-variables.js"></script>
+                                <script type="text/javascript" src="https://neocreatives.neocities.org/onionring-widget.js"></script>
+                             </div>      
+                             <div id="transring">
+                                <script src="https://transring.neocities.org/ring.js" data-widget="nb"></script>
+                             </div>
+                             <br>
+                               <a href="https://baccyflap.com/noai/?prv&s=oll" target="_top"><img src="https://baccyflap.com/noai/valywidget0.gif" alt="previous no ai webring site" title="previous no ai webring site"></a><a href="https://baccyflap.com/noai" target="_blank"><img src="https://baccyflap.com/noai/valywidget1.gif" alt="no ai webring" title="no ai webring"></a><a href="https://baccyflap.com/noai/?rnd" target="_top"><img src="https://baccyflap.com/noai/valywidget2.gif" alt="random no ai webring site" title="random no ai webring site"></a><a href="https://baccyflap.com/noai/?nxt&s=oll" target="_top"><img src="https://baccyflap.com/noai/valywidget3.gif" alt="next no ai webring site" title="next no ai webring site"></a> 
+                               <br><br>
+                              <a href="https://pixelbill.neocities.org/WebInTheRound/" target="_blank">
+                              <img src="img/buttons/WebInTheRound-graphic3.png" style="image-rendering: pixelated;">
+                              </a>
+                              <div class="intheround">
+                                 [ <a href="https://pixelbill.neocities.org/WebInTheRound/">Web in the Round</a> ]<br>[<a href="https://pixelbill.neocities.org/WebInTheRound/prev.html?id=4">☜PREV </a> • <a href="https://pixelbill.neocities.org/WebInTheRound/rand.html?id=4">RAND</a> • <a href="https://pixelbill.neocities.org/WebInTheRound/list.html">CAST LIST</a> • <a href="https://pixelbill.neocities.org/WebInTheRound/next.html?id=4"> NEXT☞</a> ]
+                             </div>
+                             <br>
+                             <div id='gfdkris'> 
+                                 <script type="text/javascript" src="https://fabstarotcorner.neocities.org/webring/onionring-variables.js"></script>
+                                 <script type="text/javascript" src="https://fabstarotcorner.neocities.org/webring/onionring-widget.js"></script>
+                              </div>
+                              <br>
+                              <div id='we_bring'>
+                                 <script type="text/javascript" src="https://brooklynights.nekoweb.org/we_bring/onionring-variables.js"></script>
+                                 <script type="text/javascript" src="https://brooklynights.nekoweb.org/we_bring/onionring-widget.js"></script>
+                              </div>
+                             <div class=hotline>
+                                <p><=<a href="https://hotlinewebring.club/ollie/previous">previous</a> || <a href="https://hotlinewebring.club/">hotline webring</a> || <a href="https://hotlinewebring.club/ollie/next">next</a>=></p>
+                             </div>
+                             <div class="retronaut">
+                                <p><=<a href="https://webring.dinhe.net/prev/https://olliveen.neocities.org/">previous</a> || <a href="https://webring.dinhe.net/">retronaut webring</a> || <a href="https://webring.dinhe.net/next/https://olliveen.neocities.org/">next</a>=></p>
+                             </div>
+                             <object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#91d020" type="image/svg+xml" style="width: 100px;height:100px;"></object>
+                          </div>
+                        </div>
+                        <!--
+                        <div class="buttons">
+                           <img src="/img/nosenuzzletoriel.gif" width="120">
+                           <img src="/img/nosenuzzlepapyrus.gif" width="105"  style="margin-bottom:7px;margin-left:10px;">
+                           <img src="/img/nosenuzzleundyne.gif" width="107"  style="margin-bottom:-3px;margin-left:10px;">
+                           <img src="/img/nosenuzzlemonsterkid.gif" width="95" style="margin-bottom:7px;margin-left:10px;">
+                        </div> -->
+                        <!--buttons-->
+                        <div class="buttons">
+                           <img src="img/buttons/dignosedgay.gif"><img src="img/buttons/cheezit.gif"><img src="img/buttons/nyancat.gif"><img src="img/buttons/dumbass.gif"><img src="img/buttons/delete-twitter.gif" height="30px"><img src="img/buttons/neocitiesrainbow.gif">
+                        </div>
+                        <div class="buttons">
+                           <a href="halloween/index.html"><img src="img/halloween/partybanner.gif" width="540"></a>
+                           <a href="halloween/index.html"><h2>CLICK HERE TO VISIT THE HALLOWEEN SUB-SITE!!</h2></a>  
+                           <img src="img/halloween/Line130.gif" width="100%">
+                        </div>
+                        <div class="buttons">
+                           <img src="img/kingpin.png" width="540">
+                        </div>
+                        <div class="buttons">
+                           <img src="img/buttons/sburb.gif"><img src="img/buttons/bob.gif"><img src="img/buttons/kromer.png" height="31"><img src="img/buttons/likecomputer.jpg"><img src="img/buttons/girl.gif" height="31"><img src="img/buttons/nofuckingthanks.gif">
+                        </div>
+                        <div class="wrapper2">
+                          <div class="todo">
+                             <h2 style="text-align:center;">*:･ﾟ✧ to do ✧･ﾟ:*</h2>
+                             <ul>
+                                 <li>my room pages:</li>
+                                 <ul>
+                                    <li>animal crossing new horizons tour</li>
+                                    <li>things i like page</li>
+                                    <li>vinyl and cd collection</li>
+                                 </ul>
+                                 <li>oc pages</li>
+                                 <li>shrines</li>
+                                 <ul>
+                                    <li>emily the strange</li>
+                                    <li>fairyland book series</li>
+                                    <li>locked tomb series</li>
+                                    <li>my sims 4 supersim</li>
+                                 </ul>
+                                 <li>graphics hoard</li>
+                              </ul>
+                          </div>
+                          <div class="caprisun">
+                             <img src="img/caprisun.gif" height="280px;" style="margin-left:-50px;margin-bottom:-30px;margin-top:-25px;position:relative;z-index:5px;" >
+                             <div class="buttons" style="margin-top:15px;">
+                             </div>
+                             <div class="buttons" style="margin-top:15px;">
+                                <img src="img/buttons/krisbtn.png"><img src="img/buttons/17776.gif"><img src="img/buttons/eyes.gif"><img src="img/buttons/fuckingwebmaster.gif"><img src="img/buttons/mspaint.jpg"><img src="img/buttons/157.png">
+                             </div>
+                          </div>
+                        </div>
+                        <div class="buttons">
+                          <img src="img/buttons/htmllearn.gif"><img src="img/buttons/neocitiesaddict.gif" height="31"><img src="img/buttons/1aj.png"><img src="img/buttons/pear.png"><img src="img/buttons/css2.png"><a href="https://foggy-listings.neocities.org/starkid/" target="_blank"><img src="img/buttons/STARKID.png"></a>
+                       </div>
+                        <div class="buttons">
+                          <img src="img/zeldatwillight.png" width="230"><img src="img/banner_01.gif" width="260">
+                        </div>
+                        <div class="buttons">
+                           <p>contact me! <span>olliveeny@gmail.com</span></p>
+                        </div>
+                        <div class="buttons">
+                           <img src="img/worldwideweb.gif" width="80">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="msfooter">
+                  <img class="colors" src="img/paintcolors.png">
+                  <a href="vriska.html"><img src="img/transparent.png" alt="surprise??" style="position:relative;top:-23px;right:62px;" width="15px"></a>
+               </div>
+            </div>
+         </div>
+         </div>
+         <!--CHRISTMAS <img src="/img/gunch.gif" style="position:absolute;top:520px;left:61%;z-index:5;" height="210"> -->
+         <!--HALLOWEEN <img src="/img/halloween/vlhghv.png" style="position:absolute;top:550px;left:52%;z-index:5;" height="150"> -->
+         <img src="img/fish.png" style="position:absolute;top:500px;left:57%;z-index:5;" height="250"> 
+          <div class="sidethingy">
+            <div id="div1">
+               <div id="drag" class="window">
+                  <div id="header1" class="title-bar">
+                     <div class="title-bar-text"><img src="img/snail2.gif" height="18px;"> UPDATES</div>
+                     <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close" onclick="closeDiv(1); closeButton(1)"></button>
+                     </div>
+                  </div>
+                  <div class="window-body">
+                     <iframe class="updates" src="updates.html" name="page" title="page 1"></iframe>
+                  </div>
+               </div>
+            </div>
+            <!--CHRISTMAS <img src="/img/kringlefucker.png" height="300" style="position:absolute;top:130px;right:190px;z-index:-10;">-->
+            <!--HALLOWEEN <img src="/img/halloween/ghostie.gif" height="250" style="position:absolute;top:150px;right:208px;z-index:-10;"> -->
+            <img src="img/bottomplant.gif" height="350" style="position:absolute;top:130px;right:140px;z-index:-10;">
+             <img src="img/noelle-deltarune.gif" height="120" style="position:absolute;top:406px;right:240px;z-index:-10;">
+             <img src="img/jadeharley-jade.gif" height="170" style="position:absolute;top:350px;right:440px;z-index:-10;">
+             <!--song of the week-->
+             <div id="div3">
+               <div id="drag" class="window">
+                  <div id="header3" class="title-bar">
+                     <div class="title-bar-text">Song Of The Week</div>
+                     <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close" onclick="closeDiv(3); closeButton(3)"></button>
+                     </div>
+                  </div>
+                  <div class="window-body">
+                     <div class="mySlides">
+                        <img class="song" src="img/sotw/iris.png"> <!--THIS WEEK-->
+                     </div>
+                     <div class="mySlides">
+                        <img class="song" src="img/sotw/whenwewereyoung.png"> <!--the moon & the stars-->
+                     </div>
+                     <div class="mySlides">
+                        <img class="song" src="img/sotw/dive.png"> <!--dive-->
+                     </div>
+                     <div class="mySlides">
+                        <img class="song" src="img/sotw/satellite.png"> <!--satellite-->
+                     </div>
+                     <div class="mySlides">
+                        <img class="song" src="img/sotw/imemyself.png"> <!--i/me/myself-->
+                     </div>
+                     <div class="mySlides">
+                        <img class="song" src="img/sotw/doritos&amp;fritos.png"> <!--doritos&fritos-->
+                     </div>
+                     <div class="mySlides">
+                        <img class="song" src="img/sotw/sayit.png"> <!--say it to my face-->
+                     </div>
+                     <div class="mySlides">
+                        <img class="song" src="img/sotw/jackieandwilson.png"> <!--jackie and wilson-->
+                     </div>
+                     <div class="mySlides">
+                        <img class="song" src="img/sotw/dead.png"> <!--dead-->
+                     </div>
+                     <div class="mySlides">
+                        <img class="song" src="img/sotw/ichidaiji.png"> <!--ichidaiji-->
+                     </div>
+                     <div class="mySlides">
+                        <img class="song" src="img/sotw/dancinginthemoonlight.png"> <!--dancing in the moonlight-->
+                     </div>
+                     <div class="mySlides">
+                        <img class="song" src="img/sotw/lent.png"> <!--lent-->
+                     </div>
+                     <div class="mySlides">
+                        <img class="song" src="img/sotw/poweroflove.png"> <!--power of love-->
+                     </div>
+                     <div class="mySlides">
+                        <img class="song" src="img/sotw/barracuda.png"> <!--barracuda-->
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="div2">
+               <div id="drag" class="window">
+                  <div id="header2" class="title-bar">
+                     <div class="title-bar-text"><img src="img/cdpixel.gif" height="18px;"> SOTW: Current + Greatest Hits</div>
+                     <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close" onclick="closeDiv(2); closeButton(2)"></button>
+                     </div> 
+                  </div>
+                  <div class="window-body">
+                     <!----- music player ----->
+                  <div id="musicplayer" class="center">
+                     <div class="songtitle"></div>
+                        <table class="controls">
+                           <tbody><tr>
+                              <td>
+                                 <div class="prev-track" onclick="prevTrack(); plusSlides(-1);"><i class="fas fa-backward" aria-hidden="true"></i></div>
+                              </td>
+                              <td>
+                                 <div class="playpause-track" onclick="playpauseTrack();"><i class="fas fa-play" aria-hidden="true"></i></div>
+                              </td>
+                              <td>
+                                 <div class="next-track" onclick="nextTrack();"><i class="fas fa-forward" aria-hidden="true"></i></div>
+                              </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <div class="seeking">
+                           <div class="current-time"></div>
+                           <input type="range" min="1" max="100" value="1" class="seek_slider" onchange="seekTo()">
+                           <div class="total-duration"></div>
+                        </div>
+                        <audio id="music" src="https://files.catbox.moe/f8etuz.mp3"></audio> 
+                     </div>
+                     <p style="margin-top:-5px;" ><a href="songoftheweek.html">all songs of the week</a></p>
+                        <!----- end music player box ----->
+                  </div>
+               </div>
+             </div>
+             
+             <div id="div5">
+               <div id="drag" class="window">
+                  <div id="header3" class="title-bar">
+                     <div class="title-bar-text">virus.exe</div>
+                     <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close" onclick="closeDiv(5)"></button>
+                     </div>
+                  </div>
+                  <div class="window-body">
+                     <!-- <img width="205" src="/img/blog/homestuck.jpg"> -->
+                     <img width="200" src="img/seasonsgreasons.png"> 
+                  </div>
+               </div>
+            </div>
+
+         
+          </div>
+       </div>
+       <!----- open and close windows ----->
+       <script>
+          function showDiv(divNumber) {
+          document.getElementById("div" + divNumber).style.display="block";}
+       </script>
+       <script>
+          function closeDiv(divNumber) {
+          document.getElementById("div" + divNumber).style.display="none";}
+       </script>
+       
+      <script type="text/javascript">
+
+         /***********************************************
+         * Drag and Drop Script: (c) Dynamic Drive (http://www.dynamicdrive.com)
+         * Please keep this notice intact
+         * Visit http://www.dynamicdrive.com/ for this script and 100s more.
+         ***********************************************/
+         
+         var dragobject={
+         z: 0, x: 0, y: 0, offsetx : null, offsety : null, targetobj : null, dragapproved : 0,
+         initialize:function(){
+         document.onmousedown=this.drag
+         document.onmouseup=function(){this.dragapproved=0}
+         },
+         drag:function(e){
+         var evtobj=window.event? window.event : e
+         this.targetobj=window.event? event.srcElement : e.target
+         if (this.targetobj.id=="drag"){
+         this.dragapproved=1
+         if (isNaN(parseInt(this.targetobj.style.left))){this.targetobj.style.left=0}
+         if (isNaN(parseInt(this.targetobj.style.top))){this.targetobj.style.top=0}
+         this.offsetx=parseInt(this.targetobj.style.left)
+         this.offsety=parseInt(this.targetobj.style.top)
+         this.x=evtobj.clientX
+         this.y=evtobj.clientY
+         if (evtobj.preventDefault)
+         evtobj.preventDefault()
+         document.onmousemove=dragobject.moveit
+         }
+         },
+         moveit:function(e){
+         var evtobj=window.event? window.event : e
+         if (this.dragapproved==1){
+         this.targetobj.style.left=this.offsetx+evtobj.clientX-this.x+"px"
+         this.targetobj.style.top=this.offsety+evtobj.clientY-this.y+"px"
+         return false
+         }
+         }
+         }
+   
+   dragobject.initialize()
+   
+   </script>
+
+       <!--links-->
+       <div class="nav">
+          <div class="link">
+             <p><a href="room.html"><img class="shortcut" src="img/shortcut.png"><img src="img/computer.png" width="40"></a></p>
+             <p style="margin-top:-20px;"><span>my room</span></p>
+          </div>
+          <div class="link">
+             <p><a href="guestbook.html"><img class="shortcut" src="img/shortcut.png"><img src="img/directory.png" width="40"></a></p>
+             <p style="margin-top:-20px;"><span>guestbook</span></p>
+          </div>
+          <div class="link">
+             <p><a href="blog.html"><img class="shortcut" src="img/shortcut.png"><img src="img/notepad.png" width="40"></a></p>
+             <p style="margin-top:-20px;"><span>blog</span></p>
+          </div>
+          <div class="link">
+             <p><a href="art.html"><img class="shortcut" src="img/shortcut.png"><img src="img/appwizard.png" width="40"></a></p>
+             <p style="margin-top:-20px;"><span>art</span></p>
+          </div>
+          <div class="link">
+             <p><button><img src="img/cd.png" width="45" onclick="showDiv(2); showDiv(3); showButton(3); showButton(2)"></button></p>
+             <p style="margin-top:-20px;"><span>music</span></p>
+          </div>
+          <div class="link">
+             <p><button><img src="img/calendar.png" width="40" onclick="showDiv(1); showButton(1)"></button></p>
+             <p style="margin-top:-20px;"><span>updates</span></p>
+          </div>
+          <div class="link">
+             <p><button><img src="img/paint.png" width="40" onclick="showDiv(4); showDiv(5); showButton(4)"></button></p>
+             <p style="margin-top:-20px;"><span>paint</span></p>
+          </div>
+          <div class="link">
+             <p><a href="archive/index.html"><img class="shortcut" src="img/shortcut.png"><img src="img/recycle.png" width="40"></a></p>
+             <p style="margin-top:-20px;"><span>recycle</span></p>
+          </div>
+       </div>
+    </div>
+ </div>
+ <div class="footer">
+    <div class="dropup">
+       <button onclick="startFunction()" class="start"></button>
+       <div id="startDropup" class="dropup-content">
+          <div class="dropwrapper">
+             <div class="drop98">
+                <h3><b>OLLIVEEN.NEOCITIES.ORG</b></h3>
+             </div>
+             <div class="dropcontent">
+                <a href="sitemap.html"><u>S</u>ite Map</a>
+                <hr style="width:95%;margin-top:-3px;margin-bottom:-2px;">
+                <a href="fashion.html"><u>F</u>ashion</a>
+                <a href="art.html"><u>A</u>rt</a>
+                <a href="oc/index.html"><u>O</u>Cs</a>
+                <a href="poetry.html"><u>P</u>oetry</a>
+                <a href="blog.html"><u>B</u>log</a>
+                <a href="diary.html"><u>D</u>iary</a>
+                <a href="tvroom.html"><u>T</u>V Room</a>
+                <a href="readinglog.html"><u>R</u>eading Log</a>
+                <a href="mugs.html"><u>M</u>ug Collection</a>
+                <a href="halloween/index.html"><u>H</u>alloween Sub-Site</a>
+                <hr style="width:95%;margin-top:-3px;margin-bottom:-2px;">
+                <a href="https://neocities.org/site/olliveen"><u>S</u>hut down</a>
+             </div>
+          </div>
+       </div>
+    </div>
+    <script>
+       /* When the user clicks on the button, 
+       toggle between hiding and showing the dropdown content */
+       function startFunction() {
+         document.getElementById("startDropup").classList.toggle("show");
+       }
+       // Close the dropdown if the user clicks outside of it
+        // catch the click outside
+        document.addEventListener('click', e => {
+         if (e.target.classList.contains('start')) return;
+           document.querySelectorAll('.dropup-content').forEach(div => div.classList.remove('show'))
+         })
+       
+    </script>
+    <div class="footertext">
+       <p>© March 18, 2023 - forever</p>
+    </div>
+    <div class="buttontext" id="button4">
+      <p><img src="img/painticon.png" height="15px;">&nbsp;Paint</p>
+   </div>
+   <div class="buttontext noimg" id="button3">
+     <p>Song of the Week</p>
+   </div>
+   <div class="buttontext" id="button2">
+      <p><img src="img/cdpixel.gif" height="15px;">&nbsp;Music Player</p>
+   </div>
+   <div class="buttontext noimg" id="button1" style="display: none;">
+     <p>Updates</p>
+   </div>
+    <div class="clock">
+       <iframe src="https://free.timeanddate.com/clock/i8v27npx/n770/fn8/fs15/tct/pct/ts1" frameborder="0" width="80" height="20" allowtransparency="true"></iframe>
+    </div>
+ </div>
+ <script>
+   function showButton(divNumber) {
+   document.getElementById("button" + divNumber).style.display="block";}
+</script>
+<script>
+   function closeButton(divNumber) {
+   document.getElementById("button" + divNumber).style.display="none";}
+</script>
+
+ <!--about me-->
+ <div class="about">
+   <div class="wholeabout">
+      <img class="downhere" src="img/downhere.png">
+      <div class="namecard">
+         <img src="img/dancingO.gif" width="100px"><img src="img/dancingL.gif" width="100px"><img src="img/dancingL.gif" width="100px"><img src="img/dancingI.gif" width="100px"><img src="img/dancingE.gif" width="100px">
+      </div>
+      <img src="img/undertale_text_box.png" style="position:relative;top:-210px;left:210px;margin-bottom:-150px;z-index:1;" width="400px">
+      <!--pet button-->
+      <button class="hide" onclick="pet()" style="position:relative;top:-40px;left:-160px;margin-bottom:-100px;">click to pet!!1!</button>
+      <img class="hide" src="img/breakingnews.jpg" style="position:relative;top:-30px;left:490px;margin-top:-300px;" width="400"> 
+      <div class="aboutbody">
+         <div class="aboutleft">
+            <div class="leftwrapper">
+               <div class="favorites">
+                  <div class="aboutboxorange">
+                     <div class="aboutheaderorange">
+                        <div class="headertext">
+                           <h3>FAVORITES:</h3>
+                        </div>
+                        <div class="close"></div>
+                     </div>
+                     <div class="fastfacts">
+                        <ul>
+                           <li>color: pink</li>
+                           <li>animal: stoat</li>
+                           <li>season: autumn</li>
+                           <li>food: sushi</li>
+                           <li>fruit: pomegranate</li>
+                           <li>flower: calla lily</li>
+                           <li>plant: clover</li>
+                           <li>smell: ocean breeze</li>
+                           <li>game: night in the woods</li>
+                           <li>book: the girl who circumnavigated fairyland in a ship of her own making</li>
+                           <li>movie: cry-baby (1990)</li>
+                           <li>word: copacetic</li>
+                           <li>musical: little shop of horrors</li>
+                           <li>song: when you were young - the killers</li>
+                           <li>characters: <img src="img/fav-emily.png" title="emily the strange"><img src="img/fav-jade.png" title="jade harley"><img src="img/fav-terezi.png" title="terezi pyrope"><img src="img/fav-lilmy.png" title="little my"><img src="img/fav-noelle.png" title="noelle holiday"><img src="img/fav-pearl.png" title="pearl"></li>
+                        </ul>
+                     </div> 
+                  </div>
+                  <a href="https://open.spotify.com/album/7A5tMcGfnl8MXCTLgKLObc?si=DTgGbP-2Rz6Nu26hMPUX-Q"><img src="img/musicjam.gif" width="200px"></a>
+               </div>
+               <div class="mewrapper">
+                  <!--ads1-->
+                  <img src="img/spamtonsweep.gif" width="350px">
+                  <div class="aboutme">
+                     <div class="aboutboxpink">
+                        <div class="aboutheaderpink">
+                           <div class="headertext">
+                              <h3>thingz about ME!</h3>
+                           </div>
+                           <div class="close"></div>
+                        </div>
+                        <div class="abouttext" id="questionnaire">
+                           <h3>FUN FACTS:</h3>
+                           <ul>
+                              <li>my birthday is january 1st</li>
+                              <li>i was born on a monday</li>
+                              <li>i have a degree in english literature</li>
+                              <ul>
+                                 <li>in a toxic love-hate polyamorous relationship with 18th century authors samuel richardson and jonathan swift</li>
+                              </ul>
+                              <li>i have found 3 four-leaf clovers</li>
+                              <li>my first fandom was warrior cats</li>
+                              <ul>
+                                 <li>my favorite character was hollyleaf </li>
+                              </ul>
+                              <li>my first fictional crush was rarity from my little pony</li>
+                              <li>two of my teeth don't have roots</li>
+                              <li>i speak english, spanish, and italian (badly)</li>
+                              <li>i am 1 degree of separation from lin manuel miranda</li>
+                              <li>this website was made in italy</li>
+                              <li>i also go by OJ so you can call me that too if you want</li>
+                           </ul>
+                           <h3>FICTIONAL CHARACTERS I GET TOLD THAT LOOK LIKE:</h3>
+                           <p>misty from yellowjackets & rainbow brite</p>
+                           <img src="img/misty.png" width="150px;"><img src="img/rainbowbrite.png" width="150px;">
+                           <h3>QUESTIONNAIRE!</h3>
+                           <p>this questionnaire was made by <a href="https://burypink.neocities.org/gifts">burypink</a> & inspired by <a href="https://arataka.neocities.org/profil">arataka</a>'s about page!!</p>
+                           <p>1. time and date u started this?</p>
+                           <p><span>friday april 4 2025 at 9:54pm</span></p>
+                           <p>2. asl?</p>
+                           <p><span>uhhh age = 25 sex = capricorn location = ur mom's house</span></p>
+                           <p>3. opinions on musicals?</p>
+                           <p><span>i get paid to be a theater kid and have a shrine to one what do you think</span></p>
+                           <p>4. favorite snack?</p>
+                           <p><span>oranges or cheez-its</span></p>
+                           <p>5. have u ever been in love?</p>
+                           <p><span>i am in love with so many people every day of my life because love is an infinite resource and i give it freely</span></p>
+                           <p>6. favorite pokemon?</p>
+                           <p><span>i don't play pokemon i don't know any of their names :(</span></p>
+                           <p>7. mario kart main?</p>
+                           <p><span>king boo :p</span></p>
+                           <p>8. tf2 main?</p>
+                           <p><span>wtf is tf2</span></p>
+                           <p>9. do you laugh at youtube poops?</p>
+                           <p><span>sure</span></p>
+                           <p>10. are you listening to music right now?</p>
+                           <p><span>sammy rae and the friends :)</span></p>
+                           <p>11. favorite shape?</p>
+                           <p><span>heart <3</span></p>
+                           <p>12. do you believe in astrology?</p>
+                           <p><span>naur but my mom has this old astrology book that frightens me so i pretend it doesn't exist for peace of mind</span></p>
+                           <p>13. do you believe in the occult?</p>
+                           <p><span>i think i believe in ghosts. i think. i might be haunted by a coin ghost who expresses themselves via pennies that sponatneously appear everywhere i go but that's unconfirmed</span></p>
+                           <p>14. opinions on vocaloid?</p>
+                           <p><span>miku is cute but otherwise i don't rly care</span></p>
+                           <p>15. would you ever want to be a rockstar?</p>
+                           <p><span>kind of maybe a little bit</span></p>
+                           <p>16. do you easily get stressed?</p>
+                           <p><span>nooooo haha who told you that. defintely not *sweating profusely*</span></p>
+                           <p>17. what is/was your favorite class in high school?</p>
+                           <p><span>english SHOUTOUT MR COOPER 🔥🔥🔥</span></p>
+                           <p>18. what pokemon type would you be? dual types are allowed lol</p>
+                           <p><span>literally couldn't tell you i don't know any types. wait ghost is a type right i'd be ghost</span></p>
+                           <p>19. rei or asuka?</p>
+                           <p><span>who?</span></p>
+                           <p>20. favorite html tag?</p>
+                           <p><span>span my best friend span</span></p>
+                           <p>21. are you religious?</p>
+                           <p><span>no</span></p>
+                           <p>22. opinions on nightcore?</p>
+                           <p><span>rad as fuckkk</span></p>
+                           <p>23. did you go through any major phase? (emo, goth, weeaboo, etc.</p>
+                           <p><span>i was fake emo for my entire middle school career - i was emo at heart but could not commit aesthetically rip</span></p>
+                           <p>24. are you good at drawing?</p>
+                           <p><span>i think so :)</span></p>
+                           <p>25. do you crack your joints?</p>
+                           <p><span>literally cracked them as i read this</span></p>
+                           <p>26. do you read visual novels?</p>
+                           <p><span>naur. i read this one called butterfly soup once and i liked it but that was the extent of my visual novel career</span></p>
+                           <p>27. can you sew?</p>
+                           <p><span>i can hack my way through it but i don't have any fancy skills</span></p>
+                           <p>28. can you cook?</p>
+                           <p><span>ye :)</span></p>
+                           <p>29. most expensive thing you've bought?</p>
+                           <p><span>uhhhhh prolly my phone?</span></p>
+                           <p>30. opinions on cosplay?</p>
+                           <p><span>sooo fun i wanna try it someday!!</span></p>
+                           <p>31. what's your most hated band/musician?</p>
+                           <p><span>i don't think i hate anyone but i do not enjoy sabrina carpenter's music sorry girl</span></p>
+                           <p>32. are you a dramatic person?</p>
+                           <p><span>no i am usually the voice of reason in my friends' dramatic lives</span></p>
+                           <p>33. what emoticon do you use most?</p>
+                           <p><span>:p</span></p>
+                           <p>34. can a miracle certainly occur?</p>
+                           <p><span>every day</span></p>
+                           <p>35. would you let a vampire suck ur blood?</p>
+                           <p><span>only if she's hot</span></p>
+                           <p>36. do you have a celebrity crush?</p>
+                           <p><span>andrew garfield is my Token Man Crush literally the only man i would make an exception for is andrew garfield</span></p>
+                           <p>37. do you like snow?</p>
+                           <p><span>yes!!! it snows a lot where i grew up i loved it so prettyyyy</span></p>
+                           <p>38. were you really into greek mythology as a kid?</p>
+                           <p><span>i liked greek mythology the normal amount</span></p>
+                           <p>39. what are some things you could competently deliver a speech on?</p>
+                           <p><span>the rich and complex multi-century history of found footage horror films</span></p>
+                           <p>40. are you good at spelling?</p>
+                           <p><span>yeagh</span></p>
+                           <p>41. which touhou wud u fuk?</p>
+                           <p><span>i don't know what that issssssss</span></p>
+                           <p>42. do you think there's going to be a robot takeover?</p>
+                           <p><span>no the robots can get fucked and tell them i said so</span></p>
+                           <p>43. HAS SCIENCE GONE TOO FAR??!?!??!?!</p>
+                           <p><span>i think we can go farther</span></p>
+                           <p>44. would you be an angel or devil?</p>
+                           <p><span>i can be your angle OR your debil</span></p>
+                           <p>45. sine, cosine, or tangent?</p>
+                           <p><span>tangent OBVIOUSLY</span></p>
+                           <p>46. do you like licorice?</p>
+                           <p><span>naur</span></p>
+                           <p>47. whats one thing you cant stand that everyone else loves?</p>
+                           <p><span>cheese</span></p>
+                           <p>48. what books did you like as a kid?</p>
+                           <p><span>WARRIOR CATS 🔥🔥🔥 if anyone can find my old warrior cats fanfics i will give you $10</span></p>
+                           <p>49. can you play any instruments?</p>
+                           <p><span>i can play trumpet. i wanna learn guitar</span></p>
+                           <p>50. what song would you want to play at your wedding?</p>
+                           <p><span>you took the words right out of my mouth by meat loaf</span></p>
+                           <p>51. do you believe in reincarnation?</p>
+                           <p><span>i don't know</span></p>
+                           <p>52. finish the sentence: I'm just a guy who ______</p>
+                           <p><span>is a girl</span></p>
+                           <p>53. have you been to another continent?</p>
+                           <p><span>i lived in europe back when i made this site but now i live in usa. i also went to south american when i was 2 but idk if that counts.</span></p>
+                           <p>54. whats your worst habit?</p>
+                           <p><span>skin picking</span></p>
+                           <p>55. favorite vegetable?</p>
+                           <p><span>zucchini</span></p>
+                           <p>56. whats something stupid that scared the shit outta you as a kid?</p>
+                           <p><span>i used to be convinced that a vampire lived in my closet and would drink my blood if i slept with my neck exposed. for years i lierally couldn't sleep if my neck was exposed</span></p>
+                           <p>57. whats one of your guilty pleasures?</p>
+                           <p><span>children's tv & books</span></p>
+                           <p>58. would you rather be a ghost or a vampire?</p>
+                           <p><span>GHOST</span></p>
+                           <p>59. what do you fear most?</p>
+                           <p><span>that everyone i love secretly finds me annoying</span></p>
+                           <p>60. do you sleep with any plushies?</p>
+                           <p><span>YESSS shoutout monkey and truffles and lambchop and lemony and blahaj</span></p>
+                           <p>61. what hobby do you just not understand?</p>
+                           <p><span>tiktok</span></p>
+                           <p>62. do you like the taste of alcohol?</p>
+                           <p><span>unfortunately</span></p>
+                           <p>63. are you a hopeless romantic?</p>
+                           <p><span>yes i love everything all the time always</span></p>
+                           <p>64. which deadly sin best fits you?</p>
+                           <p><span>envy</span></p>
+                           <p>65. which of your physical features do you like the most?</p>
+                           <p><span>my hair</span></p>
+                           <p>66. are your ears pierced?</p>
+                           <p><span>no but allegedly i give off "wacky earring energy" and it shocks people when they realize that i have never worn a wacky earring in my life</span></p>
+                           <p>67. have you ever been in a physical fight?</p>
+                           <p><span>yes it was consentual</span></p>
+                           <p>68. where do you buy your clothes?</p>
+                           <p><span>da thrift store</span></p>
+                           <p>69. where would you live if you could live anywhere?</p>
+                           <p><span>italy</span></p>
+                           <p>70. do believe in magic? or is it all a trick?</p>
+                           <p><span>DO YOU BLEIEVE IN MAGIC IN A YOUNG GIRL'S HEART (yes)</span></p>
+                           <p>71. have you read umineko when they cry? you should!</p>
+                           <p><span>I DON'T KNOW WHAT THAT ISSSSSSSS</span></p>
+                           <p>72. what is the worst chore to do?</p>
+                           <p><span>laundry</span></p>
+                           <p>73. what did your parents almost name you?</p>
+                           <p><span>claire</span></p>
+                           <p>74. what would you want your name to be if you were not your current gender?</p>
+                           <p><span>ollie is a gender neutral name</span></p>
+                           <p>75. what were your first words?</p>
+                           <p><span>mama (basic bitch)</span></p>
+                           <p>76. what do you want your last words to be?</p>
+                           <p><span>idk but probably something so funny and so cool so everyone goes "yoooo that guy was so funny and so cool"</span></p>
+                           <p>77. when did you first regularly start going online?</p>
+                           <p><span>back in the era of CLUB PENGUIN (like age 9)</span></p>
+                           <p>78. what year do you miss the most?</p>
+                           <p><span>2012 - that was the YEAR! banger music, world was supposed to end, i was starting middle school, what a time to be alive</span></p>
+                           <p>79. are you psychic?</p>
+                           <p><span>i'm decent at tarot</span></p>
+                           <p>80. would you fuck a clone of yourself? you're not allowed to kill yourself.</p>
+                           <p><span>probably</span></p>
+                           <p>81. what do you use to listen to music?</p>
+                           <p><span>spotify mostly but i also have records</span></p>
+                           <p>82. whats the biggest city you've been to?</p>
+                           <p><span>new yawk citay baybeee</span></p>
+                           <p>83. favorite animal?</p>
+                           <p><span>stoat</span></p>
+                           <p>84. what web browser do you use?</p>
+                           <p><span>FIREFOX 🔥🔥🔥</span></p>
+                           <p>85. are you allergic to kitty cats???????????</p>
+                           <p><span>no</span></p>
+                           <p>86. do you like energy drinks?</p>
+                           <p><span>i am literally engaged to be married to yerba mate</span></p>
+                           <p>87. would ever spend money on tf2 unusuals/csgo skins/gacha pulls/etc</p>
+                           <p><span>STOP ASKING ME ABOUT TF2 I DONT KNOW WHAT THAT IS</span></p>
+                           <p>88. when do you usually go to bed?</p>
+                           <p><span>11pm is my legal bedtime but the latest i'll stay up is 2 usually</span></p>
+                           <p>89. how often do you wash your hair?</p>
+                           <p><span>every 4 days</span></p>
+                           <p>90. would you download a car?</p>
+                           <p><span>duh</span></p>
+                           <p>91. what was your favorite show as a kid?</p>
+                           <p><span>h2o just add water</span></p>
+                           <p>92. whats the silliest hat you own?</p>
+                           <p><span>purple cat ear hat</span></p>
+                           <p>93. what album/song do you're feeling angsty</p>
+                           <p><span>american idiOT my emotional support album</span></p>
+                           <p>94. do you make OCs?</p>
+                           <p><span>YES and one day i will introduce you to them ;)</span></p>
+                           <p>95. whats the goofiest thing you do when completely alone?</p>
+                           <p><span>DANCE!!</span></p>
+                           <p>96. do you like fireworks?</p>
+                           <p><span>ya</span></p>
+                           <p>97. favorite painter?</p>
+                           <p><span>idk i'll have to think on that one</span></p>
+                           <p>98. favorite numbers?</p>
+                           <p><span>9</span></p>
+                           <p>99. what genre of vidya gaems are you really good at? (fps, fightan, danmaku, racing, whatever.</p>
+                           <p><span>i am EXTREMELY good at the game octagon i am on level 872</span></p>
+                           <p>100. time and date you finished this?</p>
+                           <p><span>my answers are ever evolving so never lmao</span></p>
+                        </div>
+                     </div>
+                     <img src="img/gothic.gif" style="margin-top:5px;" width="320px">
+                     <div class="click1994" style="position:relative;width:300px;">
+                        <img src="img/click1994.png" width="300px">
+                        <a href="https://youtu.be/dQw4w9WgXcQ"><img src="img/transparent.png" alt="click here!!" style="position:absolute;right:0px;z-index:5;" width="20px" height="40px"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=Slad&dob=1690245773&gender=m&element=Earth&pet=https%3A%2F%2Folliveen.neocities.org%2Fimg%2Fslad%2520moment.png&map=https%3A%2F%2Folliveen.neocities.org%2Fimg%2Fstars3.gif&background=https%3A%2F%2Folliveen.neocities.org%2Fimg%2Fblacktile.png&tablecolor=%239de027&textcolor=white" frameborder="0"></iframe>
+            <img src="img/america.gif" width="130px"> 
+            <br>
+            <img src="img/life&#32;could&#32;be&#32;a&#32;dream.gif" height="70px;" style="margin-top:-20px;margin-bottom:-5px;position:relative;left:180px;">
+            <img src="img/awyeahbitches.gif" style="position:absolute;top:490px;left:320px;" width="280px">
+            <!--START OF SELF INSERT WEBRING-->
+            <div id="selfinsertwebring" style="position:absolute;top:556px;left:455px;z-index:1;">
+               <script src="js/showWebring.js"></script>
+            </div>
+            <!--END OF SELF INSERT WEBRING-->
+            
+         </div>
+         <!--pagedoll-->
+         <div class="aboutmiddle">
+            <div id="zap">
+               <img class="pagedoll" id="furry" onclick="squeaky(), changeImage()" src="img/furryspritewinter.png">
+            </div>
+            <audio id="squeaky" src="https://files.catbox.moe/nslqov.mp3"></audio>
+            <div id="pet">
+               <img src="img/petpet.gif" width="150">
+            </div>
+         </div>
+         
+         <div class="aboutright">
+            <div class="rightwrapper">
+               <div class="likeswrapper">
+                  <div class="likes">
+                     <div class="aboutboxyellow" width="300px">
+                        <div class="aboutheaderyellow">
+                           <div class="headertext">
+                              <h3>FAST FACTS!</h3>
+                           </div>
+                           <div class="close"></div>
+                        </div>
+                        <div class="abouttext">
+                           <p>howdy!! my name is ollie and i am the webmaster of this website!</p>
+                           <ul>
+                              <li>25 years old</li>
+                              <li>they/them</li>
+                              <li>from the usa</li>
+                              <li>professional theater kid (techie edition)</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="slap">
+                     <div class="slapwrapper">
+                        <div class="slaptext">
+                           <div id="statuscafe">
+                              <div id="statuscafe-username"></div>
+                              <div id="statuscafe-content"></div>
+                           </div>
+                           <script src="https://status.cafe/current-status.js?name=ollie" defer></script>
+                        </div>
+                        <div class="slapmood">
+                           <a href="https://www.imood.com/users/olliveen"><img src="https://moods.imood.com/display/uname-olliveen/fg-000000/trans-1/imood.gif" alt="The current mood of olliveen at www.imood.com" border="0"></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="dislikeswrapper">
+                  <div class="ads">
+                     <a href="https://open.spotify.com/album/3DuiGV3J09SUhvp8gqNx8h?si=JUVbe_U-TY-lIotHUZeTEg"><img src="img/mcr.gif" width="100px"></a>
+                     <div class="stamps">
+                        <div class="marquee__item">
+                           <img src="img/buttons/portal1.png"><img src="img/buttons/neil.png"><img src="img/buttons/wow.gif"><img src="img/buttons/dogofwisdom.gif"><img src="img/buttons/265.gif"><img src="img/buttons/totallyrad.gif"><img src="img/buttons/rainbowheart.gif"><img src="img/buttons/queer.gif"><img src="img/buttons/html.png"><img src="img/buttons/kitty.gif"><img src="img/buttons/gummyworms.png"><img src="img/buttons/annoyingdog.gif"><img src="img/buttons/strawbs.png"><img src="img/buttons/toonlink.png"><img src="img/buttons/link.gif"><img src="img/buttons/papermario.png"><img src="img/buttons/nobitches.gif"><img src="img/buttons/evilgarfield.png"><img src="img/buttons/wii.png"><img src="img/buttons/ZOMG.gif"><img src="img/buttons/webkinz.png"><img src="img/buttons/cottoncandycookie.gif"><img src="img/buttons/hottopic.gif"><img src="img/buttons/pow.png"><img src="img/buttons/grabsyou.png"><img src="img/buttons/hell.png"><img src="img/buttons/pipisroom.png"><img src="img/buttons/mob1.gif"><img src="img/buttons/life_love_luigi.jpg"><img src="img/buttons/gramfeld.png"><img src="img/buttons/lps.gif"><img src="img/buttons/gir.gif"><img src="img/buttons/freddy.gif"><img src="img/buttons/monster.png"><img src="img/buttons/skelly.gif"><img src="img/buttons/cautionimweird.png"><img src="img/buttons/GC5gt23.png"><img src="img/buttons/hell.gif"><img src="img/buttons/jegbert.gif"><img src="img/buttons/uWlOMKM.png"><img src="img/buttons/queervillain.png"><img src="img/buttons/st19.gif"><img src="img/buttons/stamp-greedler.gif"><img src="img/buttons/stamp-onegender.png"><img src="img/buttons/bass.png"><img src="img/buttons/sparkle.png" width="99px"><img src="img/buttons/0c590eec.png"><img src="img/buttons/166.gif"><img src="img/buttons/atsume2.png"><img src="img/buttons/eatpant.png"><img src="img/buttons/fuckweb.gif"><img src="img/buttons/g5.gif"><img src="img/buttons/gohereinthedark.gif"><img src="img/buttons/ilovetoeatstamps.gif"><img src="img/buttons/MonochrOmegaStar.gif"><img src="img/buttons/morshustamp.gif"><img src="img/buttons/ptr&#32;02.png"><img src="img/buttons/stoat.png"><img src="img/buttons/stskel.gif"><img src="img/buttons/tumblr_e8adb00b2addaae954dda388f0fbfe5a_9ea693d5_100.gif"><img src="img/buttons/YL2SypX.gif"><img src="img/buttons/lpspopular.png"><img src="img/buttons/d90.gif"><img src="img/buttons/whistle.png"><img src="img/buttons/stamp-rickrolled.gif"><img src="img/buttons/portal2.png">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="dislikes">
+                     <div class="aboutboxgreen" width="300px">
+                        <div class="aboutheadergreen">
+                           <div class="headertext">
+                              <h3>CURRENTLY:</h3>
+                           </div>
+                           <div class="close"></div>
+                        </div>
+                        <div class="abouttext">
+                           <ul>
+                              <li>reading: mrs. dalloway by virginia woolf</li>
+                              <li>listening to: 80s pop</li>
+                              <li>watching: stranger things</li>
+                              <li>coding: blog refresh</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <img src="img/ralseihug.png" style="position:absolute;top:600px;left:60px;z-index:9;" width="100px">
+            </div>
+            <img src="img/warning2.gif" style="margin-left:-10px;" width="150px">
+            <img src="img/1.gif" style="position:relative;top:-135px;left:20px;z-index:1;" width="400">
+            <img src="img/orb.gif" style="position:relative;top:-135px;left:165px;" width="400">
+            <!--chatbox-->
+            <div class="pesterchum">
+               <img src="img/pesterchum.png" height="300px">
+               <div class="cbox">
+                  PESTERLOG:
+                  <iframe class="pesterlog" src="https://www5.cbox.ws/box/?boxid=943081&boxtag=R55E1w" width="100%" height="262px" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+                                               
+               </div>
+            </div>
+            <div class="chums">
+               <marquee direction="right"> <!--16-->
+                  <a href="https://thechillzone.neocities.org/" target="_blank"><img src="img/buttons/chillzonebuttonborder.png"></a>
+                  <a href="https://soyatoast.neocities.org/" target="_blank"><img src="img/buttons/soyatoast.png"></a>
+                  <a href="https://www.lovesick.cafe/" target="_blank"><img src="img/buttons/lovesick-button2.png"></a>
+                  <a href='https://spiders.neocities.org/'><img src='img/buttons/spiders.gif'></a>
+                  <a href='https://foggybear42.neocities.org' target='_blank'><img src='img/buttons/foggybear.gif'></a>
+                  <a href="https://sneekrealm.neocities.org/" target="_blank"><img src="img/buttons/sneek.png" alt="sneekrealm"></a>
+                  <a href='https://atomicgothic.neocities.org/' target="_blank"><img src='img/buttons/atomicgothic.gif'></a>
+                  <a href="https://confettiguts.neocities.org/" target="_blank"><img src="img/buttons/confetty.gif"></a>
+                  <a href="https://hillhouse.neocities.org/" target="_blank"><img src="img/buttons/hillhouse3.png"></a>
+                  <a href="https://antiamorous.neocities.org/" target="_blank"><img src="img/buttons/antiamobutton.gif"></a>
+                  <a href="https://leizy8499.neocities.org/" target="_blank"><img src="https://leizy8499.neocities.org/buttons/LEIZY8499.jpeg"></a>
+                  <a href="https://lostlove.neocities.org/" target="_blank"><img src="img/buttons/lunospace.gif"></a>
+                  <a href="https://killing-machine.neocities.org" target="_blank"><img src="https://killing-machine.neocities.org/killing-machine88x31.gif"></a>
+                  <a href="https://princss.online" target="_blank"><img src="https://princss.online/media/images/buttons/princss_button.png"></a>
+                  <a href="https://revolution909.neocities.org/" target="_blank"><img src="img/buttons/button_rev.gif"></a>
+                  <a title="Laith Rai7an" href="http://arataka.neocities.org/" target="_blank"><img alt="Laith Rai7an" src="img/buttons/laith.gif"/></a>
+               </marquee>
+               <marquee direction="left"> <!--16-->
+                  <a href='https://doqmeat.neocities.org/' target="_blank"><img src='img/buttons/doqmeat.png'></a>
+                  <a href='https://phrogee.neocities.org/' target="_blank"><img src='img/buttons/phrogee.gif'></a>
+                  <a href='https://raincoats.neocities.org' target="_blank"><img src='img/buttons/raincoats.png' height="31px"></a>
+                  <a href="https://layercake.neocities.org/" target="_blank"><img src="img/buttons/layercake.gif" height="31px"></a>
+                  <a href="https://peanutbuttaz.neocities.org/" target="_blank"><img src="img/buttons/peanutbuttaz2.png"></a>
+                  <a href='https://juneish.neocities.org/' target="_blank"><img src='img/buttons/webcatz.png'></a>
+                  <a href="https://roaratomic.neocities.org/" target="_blank"><img src="img/buttons/raob.gif"></a> 
+                  <a href="https://bloody-world.neocities.org/" target="_blank"><img src="img/buttons/bloody.gif"></a> 
+                  <a href ="https://xomii.neocities.org/index.html" target="_blank"><img style="width:100px;height: 35px;" src="img/buttons/xomii.gif"></a>
+                  <a href="http://bisha.neocities.org" target="_blank"><img src="img/buttons/bisha.gif"></a>
+                  <a target="_blank" href="https://phantasmablahh.neocities.org/"><img src="img/buttons/palomas2.png" alt="a button"></a>
+                  <a href="https://velvetblue.neocities.org" target="_blank"><img src="https://files.catbox.moe/vltthb.png" alt="Velvet Blue"></a>
+                  <a href="https://dimden.dev/" target="_blank"><img src="https://dimden.dev/images/88x31.gif"></a>
+                  <a target="_blank" href="https://troy-sucks.neocities.org/"><img src="https://troy-sucks.neocities.org/images/troysuckwiggly.gif"/>
+                  <a href="https://coffeeplant.neocities.org/" target="_blank"><img src="img/buttons/coffeeplant.jpg"></a>
+                  <a href="https://sizztuna.neocities.org/" target="_blank"><img src="img/buttons/tunabutton.gif"></a>
+               </marquee>
+            </div>
+            <marquee class="fish" direction="left">
+               <img src='img/arowana.png'><img src='img/gar&#32;copy.png'><img src='img/salmon.png'><img src='img/sturgeon.png'><img src='img/catfish.png'><img src='img/golden_trout.png'><img src='img/tuna.png'><img src='img/anchovy.png'>
+            </marquee>
+            <div class="cipher">
+               lol hey nerd
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<script>
+   function pet() {
+     var x = document.getElementById("pet");
+     if (x.style.display === "block") {
+       x.style.display = "none";
+     } else {
+       x.style.display = "block";
+     }
+   }
+</script> 
+<script>
+   function squeaky() {
+      var audio = document.getElementById("squeaky");
+      audio.play();
+   }
+</script>
+<script>
+   function changeImage() {
+      if (document.getElementById("furry").src == "https://olliveen.neocities.org/img/furryspritewinter.png") {
+         document.getElementById("furry").src = "https://olliveen.neocities.org/img/mesprite.png";
+      } else {
+         document.getElementById("furry").src = "https://olliveen.neocities.org/img/furryspritewinter.png";
+      }
+   }
+</script>
+<script>
+	 // This changes everything
+   "use strict";
+
+   // retrieve the element
+   var element = document.getElementById("zap");
+
+   // reset the transition by...
+   element.addEventListener("click", function(e){
+   e.preventDefault;
+   
+   // -> removing the class
+   element.classList.remove("squeeze");
+   
+   // -> triggering reflow /* The actual magic */
+   // without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
+   // This was, from the original tutorial, will no work in strict mode. Thanks Felis Phasma! The next uncommented line is the fix.
+   // element.offsetWidth = element.offsetWidth;
+   
+   void element.offsetWidth;
+   
+   // -> and re-adding the class
+   element.classList.add("squeeze");
+   }, false);
+</script>
+
+<!----- music player ----->
+<script>
+  // initiate variables
+  let track_name = document.querySelector(".songtitle");
+
+  let playpause_btn = document.querySelector(".playpause-track");
+  let next_btn = document.querySelector(".next-track");
+  let prev_btn = document.querySelector(".prev-track");
+
+  let seek_slider = document.querySelector(".seek_slider");
+  let curr_time = document.querySelector(".current-time");
+  let total_duration = document.querySelector(".total-duration");
+
+  let track_index = 0;
+  let isPlaying = false;
+  let updateTimer;
+  
+  // create new audio element
+  let curr_track = document.getElementById("music");
+  
+  //
+  // DEFINE YOUR SONGS HERE!!!!!
+  // MORE THAN FOUR SONGS CAN BE ADDED!!
+  // JUST ADD ANOTHER BRACKET WITH NAME AND PATH
+  // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
+  let track_list = [
+      {
+          name:"THIS WEEK 1/5/26: iris - goo goo dolls",
+          path:"https://files.catbox.moe/8ykfmt.mp3"
+      },
+      {
+          name:"4/7/25: when you were young - the killers",
+          path:"https://files.catbox.moe/imcgj6.mp3"
+      },
+      {
+          name:"2/3/25: dive - olivia dean",
+          path:"https://files.catbox.moe/6i6srt.mp3"
+      },
+      {
+          name:"9/18/23: satellite - the night flight orchestra",
+          path:"https://files.catbox.moe/e9j72t.mp3"
+      },
+      {
+          name:"5/20/24: i/me/myself - will wood",
+          path:"https://files.catbox.moe/m3ankh.mp3"
+      },
+      {
+          name:"9/15/24: doritos & fritos - 100 gecs",
+          path:"https://files.catbox.moe/vfjyz5.mp3"
+      },
+      {
+          name:"4/3/23: say it (to my face) - meet me @ the altar",
+          path:"https://files.catbox.moe/o23dhv.mp3"
+      },
+      {
+          name:"4/8/24: jackie and wilson - hozier",
+          path:"https://files.catbox.moe/mshwnh.mp3"
+      },
+      {
+          name:"4/21/23: dead! - my chemical romance",
+          path:"https://files.catbox.moe/usnohu.mp3"
+      },
+      {
+          name:"8/5/24: ichidaiji - pokladot stingray",
+          path:"https://files.catbox.moe/si8psx.mp3"
+      },
+      {
+         name:"5/1/23: dancing in the moonlight - king harvest" ,
+          path:"https://files.catbox.moe/jpuby5.mp3"
+      },
+      {
+          name:"1/29/24: lent - autoheart",
+          path:"https://files.catbox.moe/l5sjv0.mp3"
+      },
+      {
+          name:"1/8/24: the power of love - huey lewis & the news",
+          path:"https://files.catbox.moe/0oooel.mp3"
+      },
+      {
+          name:"4/15/24: barracuda - heart",
+          path:"https://files.catbox.moe/trmw2w.mp3"
+      },
+  ];
+  //
+  //
+  //
+  //
+  //
+
+  function loadTrack(track_index) {
+      clearInterval(updateTimer);
+      resetValues();
+
+      // load a new track
+      curr_track.src = track_list[track_index].path;
+      curr_track.load();
+      
+      // update details of the track
+      track_name.textContent = track_list[track_index].name;
+
+      // set an interval of 1000 milliseconds for updating the seek slider
+      updateTimer = setInterval(seekUpdate, 1000);
+      
+      // move to the next track if the current one finishes playing 
+      curr_track.addEventListener("ended", nextTrack);
+  }
+
+  // reset values
+  function resetValues() {
+      curr_time.textContent = "0:00";
+      total_duration.textContent = "0:00";
+      seek_slider.value = 0;
+  }
+
+  // checks if song is playing
+  function playpauseTrack() {
+      if (!isPlaying) playTrack();
+      else pauseTrack();
+  }
+
+  // plays track when play button is pressed
+  function playTrack() {
+      curr_track.play();
+      isPlaying = true;
+      
+      // replace icon with the pause icon
+      playpause_btn.innerHTML = '<i class="fas fa-pause"></i>';
+  }
+
+  // pauses track when pause button is pressed
+  function pauseTrack() {
+      curr_track.pause();
+      isPlaying = false;
+      
+      // replace icon with the play icon
+      playpause_btn.innerHTML = '<i class="fas fa-play"></i>';
+  }
+
+  // moves to the next track
+  function nextTrack() {
+      if (track_index < track_list.length - 1)
+          track_index += 1;
+      else track_index = 0;
+      loadTrack(track_index);
+      playTrack();
+      plusSlides(1);
+  }
+
+  // moves to the previous track
+  function prevTrack() {
+      if (track_index > 0)
+          track_index -= 1;
+      else track_index = track_list.length;
+      loadTrack(track_index);
+      playTrack();
+  }
+
+  // seeker slider
+  function seekTo() {
+      seekto = curr_track.duration * (seek_slider.value / 100);
+      curr_track.currentTime = seekto;
+  }
+
+  function seekUpdate() {
+      let seekPosition = 0;
+      
+      // check if the current track duration is a legible number
+      if (!isNaN(curr_track.duration)) {
+          seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+          seek_slider.value = seekPosition;
+          
+      // calculate the time left and the total duration
+      let currentMinutes = Math.floor(curr_track.currentTime / 60);
+      let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+      let durationMinutes = Math.floor(curr_track.duration / 60);
+      let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+          
+      // adding a zero to the single digit time values
+      if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+      if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+      if (currentMinutes < 10) { currentMinutes = currentMinutes; }
+      if (durationMinutes < 10) { durationMinutes = durationMinutes; }
+
+      curr_time.textContent = currentMinutes + ":" + currentSeconds;
+      total_duration.textContent = durationMinutes + ":" + durationSeconds;
+    }
+  }
+  
+  // load the first track in the tracklist
+  loadTrack(track_index);
+</script>
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);th
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slides[slideIndex-1].style.display = "block";  
+  }
+  </script>
+
+  <script>
+    function show(characters) {
+      document.getElementById('chara').innerHTML = document.getElementById(characters).innerHTML;
+     }
+  </script>
+ </body>
+ </html>
+ 
