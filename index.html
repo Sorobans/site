@@ -138,66 +138,72 @@
 <footer id="contact">
     <img src="contact_ogyellow.gif" alt="Contact GIF">
     <br>
-    <span id="email" onclick="copyEmail()"><b><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="6c0603020d042c1b0d1a0b031e09420f0301">[email&#160;protected]</a></b></span>
+    <!-- REMOVED OBFUSCATION HERE -->
+    <span id="email" onclick="copyEmail()"><b>jonah@wavgore.com</b></span>
     <div id="popup">Address Copied!</div>
 </footer>
 
-<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 <script>
     function copyEmail(){
-      const email='jonah@wavgore.com';
+      const email = 'jonah@wavgore.com';
       navigator.clipboard.writeText(email).then(()=>{
-        const popup=document.getElementById('popup');
-        popup.style.display='block';
-        setTimeout(()=>{popup.style.display='none';},2000);
+        const popup = document.getElementById('popup');
+        popup.style.display = 'block';
+        setTimeout(()=>{popup.style.display = 'none';}, 2000);
       });
     }
-    function openPreview(imageUrl,title,description,timestamp){
-      document.getElementById('overlay').style.display='flex';
-      document.getElementById('previewImage').src=imageUrl;
-      document.getElementById('previewTitle').innerText=title;
-      document.getElementById('previewDescription').innerHTML=(description||'')+(timestamp?"<br><span style='font-size:13px;color:#888'>Added: "+formatTimestamp(timestamp)+"</span>":'');
+
+    function openPreview(imageUrl, title, description, timestamp){
+      document.getElementById('overlay').style.display = 'flex';
+      document.getElementById('previewImage').src = imageUrl;
+      document.getElementById('previewTitle').innerText = title;
+      document.getElementById('previewDescription').innerHTML = (description || '') + (timestamp ? "<br><span style='font-size:13px;color:#888'>Added: " + formatTimestamp(timestamp) + "</span>" : '');
     }
+
     function formatTimestamp(timestamp){
-      if(!timestamp)return '';
-      const date=new Date(timestamp);
+      if(!timestamp) return '';
+      const date = new Date(timestamp);
       return date.toLocaleString();
     }
+
     function closePreview(){
-      document.getElementById('overlay').style.display='none';
-      document.getElementById('previewImage').src='';
+      document.getElementById('overlay').style.display = 'none';
+      document.getElementById('previewImage').src = '';
     }
+
     function loadGallery(){
       fetch('gallery.json')
-        .then(response=>response.json())
-        .then(data=>{
-          const gallery=document.getElementById('galleryInner');
-          gallery.innerHTML='';
-          const publicPhotos=(data.photos||[]).filter(photo=>!photo.isPrivate);
+        .then(response => response.json())
+        .then(data => {
+          const gallery = document.getElementById('galleryInner');
+          gallery.innerHTML = '';
+          const publicPhotos = (data.photos || []).filter(photo => !photo.isPrivate);
           if(!publicPhotos.length){
-            gallery.innerHTML="<div style='color:#aaa;padding:24px;'>No photos yet.</div>";
+            gallery.innerHTML = "<div style='color:#aaa;padding:24px;'>No photos yet.</div>";
             return;
           }
-          publicPhotos.sort((a,b)=>new Date(b.timestamp)-new Date(a.timestamp)).forEach(photo=>{
-            const item=document.createElement('div');
+          publicPhotos.sort((a,b) => new Date(b.timestamp) - new Date(a.timestamp)).forEach(photo => {
+            const item = document.createElement('div');
             item.classList.add('item');
-            item.innerHTML=`
-              <img src="${photo.url}" alt="${(photo.title||'').replace(/"/g,'&quot;')}"
-                onclick="openPreview('${photo.url.replace(/'/g,"\\'")}', '${(photo.title||'').replace(/'/g,"\\'")}', '${(photo.description||'').replace(/'/g,"\\'")}', '${photo.timestamp ? photo.timestamp : ''}')">
+            
+            // Cleaned up the onclick escaping here
+            item.innerHTML = `
+              <img src="${photo.url}" alt="${(photo.title || '').replace(/"/g, '&quot;')}"
+                onclick="openPreview('${photo.url.replace(/'/g, "\\'")}', '${(photo.title || '').replace(/'/g, "\\'")}', '${(photo.description || '').replace(/'/g, "\\'")}', '${photo.timestamp ? photo.timestamp : ''}')">
               <p>${photo.title || ''}</p>
               <p>${photo.description || ''}</p>
             `;
             gallery.appendChild(item);
           });
         })
-        .catch(error=>{
-          const gallery=document.getElementById('galleryInner');
-          gallery.innerHTML="<div style='color:#c00;padding:20px;'>Error loading photos.</div>";
-          console.error('Error loading gallery:',error);
+        .catch(error => {
+          const gallery = document.getElementById('galleryInner');
+          gallery.innerHTML = "<div style='color:#c00;padding:20px;'>Error loading photos.</div>";
+          console.error('Error loading gallery:', error);
         });
     }
     loadGallery();
-    setInterval(loadGallery,30000);
+    setInterval(loadGallery, 30000);
 </script>
 </body>
 </html>
